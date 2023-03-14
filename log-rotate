@@ -1,0 +1,17 @@
+/var/log/opensips.log {
+    daily
+    dateext
+    rotate 60
+    compress
+    compresscmd /usr/bin/xz
+    create 0644 root root
+}
+
+/var/log/rtpproxy.log {
+    daily
+    dateext
+    rotate 10
+    compress
+    compresscmd /usr/bin/xz
+    create 0644 root root
+}
